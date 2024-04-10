@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="homeStyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+
+
+    <div class=cardContainer>
+        <div class=carousel>
+          <div class=cardSlider>
+
+            <section>
+                <div class="cardSlide">
+                    <h1 class="pageHead">BVC Sport Club Welcomes You!</h1>
+                    <h3>Welcome to the annual SPORTING EVENT hosted by the BVC Sport Club.
+                        No need for any accessories just bring yourself or feel free to invite a friend.
+                    </h3>
+        
+                </div>
+            </section>
+
+            <section>
+                <div class="cardSlide">
+                    <h1 class="pageHead">Who Are We?</h1>
+                    <h3>WE are the BVC Sport Club. We are responsible for hosting fun sporting activities
+                        and games. Our aim is to keep you active, happy, healthy, and to just
+                        see you have fun.
+                    </h3>
+        
+                </div>
+        </section>
+
+            <section>
+                <div class="cardSlide">
+                    <h1 class="pageHead">What is this event about?</h1>
+                    <h3>This event involves a collection of mini sporting activities and games that you 
+                        can play or watch professional athletes play. There will be snacks and drinks available
+                         at every booth you visit. So bring yourself and a friend and let us have fun!
+                    </h3>
+        
+                </div>
+            </section>
+
+            <section>  
+                
+        <div class="cardSlide">
+            <h1 class="pageHead">Registration</h1>
+            <h3>Registration is super easy, just fill out a form, but remember your status in college:
+                <ul>
+                    <li>For Students: $10</li>
+                    <li>For Teachers: $50</li>
+                    <li>For Volunteers: No Fee</li>
+                </ul>
+                <button id="pageRegister" type="submit">Register</button>
+            </h3>
+
+        </div>
+            </section>
+
+          </div>
+          <div class=controls>
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+            
+            <ul>
+              <li class="selected"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    
+   <!-- <div id="cardContainer">
+
+        <div class="cardSlide">
+            <h1 class="pageHead">BVC Sport Club Welcomes You!</h1>
+            <h3>Welcome to the annual SPORTING EVENT hosted by the BVC Sport Club.
+                No need for any accessories just bring yourself or feel free to invite a friend.
+            </h3>
+
+        </div>
+
+        <div class="cardSlide">
+            <h1 class="pageHead">Who Are We?</h1>
+            <h3>WE are the BVC Sport Club. We are responsible for hosting fun sporting activities
+                and games. Our aim is to keep you active, happy, healthy, and to just
+                see you have fun.
+            </h3>
+
+        </div>
+
+        <div class="cardSlide">
+            <h1 class="pageHead">What is this event about?</h1>
+            <h3>This event involves a collection of mini sporting activities and games that you 
+                can play or watch professional athletes play. There will be snacks and drinks available
+                 at every booth you visit. So bring yourself and a friend and let us have fun!
+            </h3>
+
+        </div>
+
+        <div class="cardSlide">
+            <h1 class="pageHead">Registration</h1>
+            <h3>Registration is super easy, just fill out a form, just remember your status in college:
+                <ul>
+                    <li>For Students: $10</li>
+                    <li>For Teachers: $50</li>
+                    <li>For Volunteers: No Fee</li>
+                </ul>
+                <button id="pageRegister" type="submit">Register</button>
+            </h3>
+
+        </div>
+
+        <a id="prev">&#10094;</a>
+        <a id="next">&#10095;</a>
+
+    </div>-->
+
+<!--Making the Regisration form-->
+<div id="formContainer">
+    <div id="eventForm">
+        <form action="http://localhost:3000/formDataEntry" method="POST">
+         
+            <h1 class="formHead">Register</h1>
+
+            <div class="allInputs">
+            <div class="input1">
+              <label class="label" for="id">ID:</label>
+              <input type="text" id="id" name="id" placeholder="Enter id number">
+           </div>
+
+           <div class="input1">
+            <label class="label" for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+        </div>
+ 
+        <div class="input1">
+            <label class="label" for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address">
+        </div>
+    </div>
+
+    <div class="status">
+        <label for="status">Status:</label>
+        <select id="status" name="status" title="status" class="statVal">
+        <option>Student</option>
+        <option>Staff</option>
+        <option>Volunteer</option>
+        </select>
+    </div>
+
+
+        <button class="formRegister" type="submit">Register</button>
+
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
